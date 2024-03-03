@@ -1,0 +1,99 @@
+buildscript {
+    ext.serenityCoreVersion = '4.0.19'
+    ext.serenityReport = '3.4.2'
+
+    repositories {
+        mavenLocal()
+        mavenCentral()
+        jcenter()
+    }
+
+    dependencies {
+        classpath("net.serenity-bdd:serenity-gradle-plugin:$serenityReport")
+        classpath "net.serenity-bdd:serenity-single-page-report:3.3.0"
+    }
+}
+
+plugins {
+    id "net.serenity-bdd.serenity-gradle-plugin" version "3.3.0"
+    id 'java'
+    id 'eclipse'
+    id 'idea'
+    id 'java-library'
+}
+
+defaultTasks 'clean','test','aggregate'
+
+group 'com.exito'
+version '1.0-SNAPSHOT'
+
+
+compileJava.options.encoding = "UTF-8"
+compileTestJava.options.encoding = "UTF-8"
+
+sourceCompatibility = 11
+targetCompatibility = 11
+
+repositories {
+    mavenLocal()
+    mavenCentral()
+    jcenter()
+}
+
+ext {
+    junitVersion = '5.8.2'
+    logVersion = '1.2.10'
+    lombokVersion = '1.18.22'
+    ensureVersion='3.2.0'
+    jsonVersion='20210307'
+    versionSunMail='1.6.2'
+}
+
+dependencies {
+
+    implementation ("net.serenity-bdd:serenity-core:${serenityCoreVersion}")
+    implementation "net.serenity-bdd:serenity-junit5:${serenityCoreVersion}"
+    implementation "net.serenity-bdd:serenity-cucumber:${serenityCoreVersion}"
+
+ //   implementation "net.serenity-bdd:serenity-rest-assured:${serenityCoreVersion}"
+    implementation "net.serenity-bdd:serenity-ensure:${ensureVersion}"
+    implementation "net.serenity-bdd:serenity-screenplay:${serenityCoreVersion}"
+    implementation "net.serenity-bdd:serenity-screenplay-webdriver:${serenityCoreVersion}"
+    implementation "net.serenity-bdd:serenity-screenplay-rest:${serenityCoreVersion}"
+
+    implementation "ch.qos.logback:logback-classic:${logVersion}"
+    implementation "ch.qos.logback:logback-core:${logVersion}"
+    implementation "org.json:json:${jsonVersion}"
+
+    implementation 'io.github.bonigarcia:webdrivermanager:5.6.4'
+    // implementation group: 'com.github.javafaker', name: 'javafaker', version: '1.0.2'
+
+    compileOnly "org.projectlombok:lombok:${lombokVersion}"
+    annotationProcessor "org.projectlombok:lombok:${lombokVersion}"
+    testCompileOnly "org.projectlombok:lombok:${lombokVersion}"
+    testAnnotationProcessor "org.projectlombok:lombok:${lombokVersion}"
+
+    implementation "com.sun.mail:javax.mail:${versionSunMail}"
+    implementation "com.sun.mail:smtp:${versionSunMail}"
+    implementation "com.sun.mail:imap:${versionSunMail}"
+}
+
+test {
+    useJUnit {
+        include "*/";
+        gradle.startParameter.continueOnFailure = true
+        testLogging.showStandardStreams = true
+        systemProperties System.getProperties()
+        systemProperty "cucumber.filter.tags", System.getProperty("cucumber.filter.tags")
+    }
+
+}
+
+serenity {
+    testRoot = "com.exito.runners"
+    requirementsBaseDir = "src/test/resources/features"
+    reports = ["single-page-html"]
+}
+
+gradle.startParameter.continueOnFailure = true
+test.finalizedBy(aggregate)

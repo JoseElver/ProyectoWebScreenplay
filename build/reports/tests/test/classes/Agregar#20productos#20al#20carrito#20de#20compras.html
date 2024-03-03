@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - Class Agregar productos al carrito de compras</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>Class Agregar productos al carrito de compras</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/default-package.html">default-package</a> &gt; Agregar productos al carrito de compras</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">1</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">1</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">1m30.50s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox failures" id="successRate">
+<div class="percent">0%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Failed tests</a>
+</li>
+<li>
+<a href="#tab1">Tests</a>
+</li>
+<li>
+<a href="#tab2">Standard output</a>
+</li>
+<li>
+<a href="#tab3">Standard error</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Failed tests</h2>
+<div class="test">
+<a name="Agregar 5 productos aleatorios y agregarlos al carrito de compras"></a>
+<h3 class="failures">Agregar 5 productos aleatorios y agregarlos al carrito de compras</h3>
+<span class="code">
+<pre>java.lang.AssertionError: 
+Expected: an element that is visible
+     but: no matching element found by [[ChromeDriver: chrome on windows (3bfba0721135c908740aac17e1c9a551)] -&gt; xpath: (//span[.='Agregar'])[1]]
+	at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:20)
+	at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:6)
+	at net.serenitybdd.screenplay.QuestionConsequence.evaluateFor(QuestionConsequence.java:49)
+	at net.serenitybdd.screenplay.EventualConsequence.evaluateFor(EventualConsequence.java:59)
+	at net.serenitybdd.screenplay.Actor.check(Actor.java:420)
+	at net.serenitybdd.screenplay.Actor.should(Actor.java:392)
+	at net.serenitybdd.screenplay.waits.WaitUntilBuilder$1.performAs(WaitUntilBuilder.java:29)
+	at net.serenitybdd.screenplay.Actor.performTask(Actor.java:299)
+	at net.serenitybdd.screenplay.Actor.perform(Actor.java:274)
+	at net.serenitybdd.screenplay.Actor.performSilently(Actor.java:254)
+	at net.serenitybdd.screenplay.Actor.attemptsTo(Actor.java:211)
+	at net.serenitybdd.screenplay.Actor.attemptsTo(Actor.java:222)
+	at com.exito.tasks.AgregarProductosAleatorios.performAs(AgregarProductosAleatorios.java:42)
+	at com.exito.tasks.AgregarProductosAleatorios$ByteBuddy$z8uMc52S.performAs$accessor$6cRNtmAx(Unknown Source)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at net.thucydides.core.steps.StepInterceptor.invokeMethod(StepInterceptor.java:519)
+	at net.thucydides.core.steps.StepInterceptor.executeTestStepMethod(StepInterceptor.java:499)
+	at net.thucydides.core.steps.StepInterceptor.runTestStep(StepInterceptor.java:471)
+	at net.thucydides.core.steps.StepInterceptor.runOrSkipMethod(StepInterceptor.java:213)
+	at net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:200)
+	at net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:92)
+	at net.thucydides.core.steps.ProxyConfiguration$InterceptorDispatcher.intercept(ProxyConfiguration.java:51)
+	at com.exito.tasks.AgregarProductosAleatorios$ByteBuddy$z8uMc52S.performAs(Unknown Source)
+	at net.serenitybdd.screenplay.Actor.performTask(Actor.java:299)
+	at net.serenitybdd.screenplay.Actor.perform(Actor.java:274)
+	at net.serenitybdd.screenplay.Actor.attemptsTo(Actor.java:215)
+	at net.serenitybdd.screenplay.Actor.attemptsTo(Actor.java:222)
+	at com.exito.stepDefinitions.AgregarProductosCarritoStepDefinition.elUsuarioSeleccionaLosProductos(AgregarProductosCarritoStepDefinition.java:29)
+	at ✽.el usuario selecciona los productos(file:///D:/Cursos/Proyectos%20Java/ProyectoWebScreenplay/src/test/resources/features/agregarProductosCarrito.feature:8)
+</pre>
+</span>
+</div>
+</div>
+<div id="tab1" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="failures">Agregar 5 productos aleatorios y agregarlos al carrito de compras</td>
+<td class="failures">1m30.50s</td>
+<td class="failures">failed</td>
+</tr>
+</table>
+</div>
+<div id="tab2" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>
+@HU
+Escenario: Agregar 5 productos aleatorios y agregarlos al carrito de compras                     ?[90m# src/test/resources/features/agregarProductosCarrito.feature:6?[0m
+  ?[32mDado ?[0m?[32mque el usuario se encuentre en la pagina principal de exito?[0m                               ?[90m# com.exito.stepDefinitions.AgregarProductosCarritoStepDefinition.queElUsuarioSeEncuentreEnLaPaginaPrincipalDeExito()?[0m
+  ?[31mCuando ?[0m?[31mel usuario selecciona los productos?[0m                                                     ?[90m# com.exito.stepDefinitions.AgregarProductosCarritoStepDefinition.elUsuarioSeleccionaLosProductos()?[0m
+      ?[31mjava.lang.AssertionError: 
+Expected: an element that is visible
+     but: no matching element found by [[ChromeDriver: chrome on windows (3bfba0721135c908740aac17e1c9a551)] -&gt; xpath: (//span[.='Agregar'])[1]]
+	at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:20)
+	at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:6)
+	at net.serenitybdd.screenplay.QuestionConsequence.evaluateFor(QuestionConsequence.java:49)
+	at net.serenitybdd.screenplay.EventualConsequence.evaluateFor(EventualConsequence.java:59)
+	at net.serenitybdd.screenplay.Actor.check(Actor.java:420)
+	at net.serenitybdd.screenplay.Actor.should(Actor.java:392)
+	at net.serenitybdd.screenplay.waits.WaitUntilBuilder$1.performAs(WaitUntilBuilder.java:29)
+	at net.serenitybdd.screenplay.Actor.performTask(Actor.java:299)
+	at net.serenitybdd.screenplay.Actor.perform(Actor.java:274)
+	at net.serenitybdd.screenplay.Actor.performSilently(Actor.java:254)
+	at net.serenitybdd.screenplay.Actor.attemptsTo(Actor.java:211)
+	at net.serenitybdd.screenplay.Actor.attemptsTo(Actor.java:222)
+	at com.exito.tasks.AgregarProductosAleatorios.performAs(AgregarProductosAleatorios.java:42)
+	at com.exito.tasks.AgregarProductosAleatorios$ByteBuddy$z8uMc52S.performAs$accessor$6cRNtmAx(Unknown Source)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at net.thucydides.core.steps.StepInterceptor.invokeMethod(StepInterceptor.java:519)
+	at net.thucydides.core.steps.StepInterceptor.executeTestStepMethod(StepInterceptor.java:499)
+	at net.thucydides.core.steps.StepInterceptor.runTestStep(StepInterceptor.java:471)
+	at net.thucydides.core.steps.StepInterceptor.runOrSkipMethod(StepInterceptor.java:213)
+	at net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:200)
+	at net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:92)
+	at net.thucydides.core.steps.ProxyConfiguration$InterceptorDispatcher.intercept(ProxyConfiguration.java:51)
+	at com.exito.tasks.AgregarProductosAleatorios$ByteBuddy$z8uMc52S.performAs(Unknown Source)
+	at net.serenitybdd.screenplay.Actor.performTask(Actor.java:299)
+	at net.serenitybdd.screenplay.Actor.perform(Actor.java:274)
+	at net.serenitybdd.screenplay.Actor.attemptsTo(Actor.java:215)
+	at net.serenitybdd.screenplay.Actor.attemptsTo(Actor.java:222)
+	at com.exito.stepDefinitions.AgregarProductosCarritoStepDefinition.elUsuarioSeleccionaLosProductos(AgregarProductosCarritoStepDefinition.java:29)
+	at âœ½.el usuario selecciona los productos(file:///D:/Cursos/Proyectos%20Java/ProyectoWebScreenplay/src/test/resources/features/agregarProductosCarrito.feature:8)
+?[0m
+  ?[36mEntonces ?[0m?[36mse valida que los valores de los productos correspondan a los que estan en el carrito?[0m ?[90m# com.exito.stepDefinitions.AgregarProductosCarritoStepDefinition.seValidaQueLosValoresDeLosProductosCorrespondanALosQueEstanEnElCarrito()?[0m
+</pre>
+</span>
+</div>
+<div id="tab3" class="tab">
+<h2>Standard error</h2>
+<span class="code">
+<pre>mar. 02, 2024 10:30:47 P. M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 121, returning the closest version; found: 118; Please update to a Selenium version that supports CDP version 121
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 7.1</a> at 2 mar. 2024 22:32:15</p>
+</div>
+</div>
+</body>
+</html>
