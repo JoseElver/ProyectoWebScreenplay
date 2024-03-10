@@ -7,7 +7,7 @@ import io.cucumber.java.es.Dado;
 import io.cucumber.java.es.Entonces;
 import net.serenitybdd.screenplay.actions.Open;
 import net.serenitybdd.screenplay.actors.OnStage;
-import net.thucydides.model.util.EnvironmentVariables;
+import net.thucydides.core.util.EnvironmentVariables;
 
 import static net.serenitybdd.screenplay.actors.OnStage.theActorCalled;
 

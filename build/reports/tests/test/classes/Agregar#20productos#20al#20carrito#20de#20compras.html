@@ -41,7 +41,7 @@
 </td>
 <td>
 <div class="infoBox" id="duration">
-<div class="counter">1m30.50s</div>
+<div class="counter">1m23.27s</div>
 <p>duration</p>
 </div>
 </td>
@@ -79,41 +79,97 @@
 <a name="Agregar 5 productos aleatorios y agregarlos al carrito de compras"></a>
 <h3 class="failures">Agregar 5 productos aleatorios y agregarlos al carrito de compras</h3>
 <span class="code">
-<pre>java.lang.AssertionError: 
-Expected: an element that is visible
-     but: no matching element found by [[ChromeDriver: chrome on windows (3bfba0721135c908740aac17e1c9a551)] -&gt; xpath: (//span[.='Agregar'])[1]]
-	at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:20)
-	at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:6)
-	at net.serenitybdd.screenplay.QuestionConsequence.evaluateFor(QuestionConsequence.java:49)
-	at net.serenitybdd.screenplay.EventualConsequence.evaluateFor(EventualConsequence.java:59)
-	at net.serenitybdd.screenplay.Actor.check(Actor.java:420)
-	at net.serenitybdd.screenplay.Actor.should(Actor.java:392)
-	at net.serenitybdd.screenplay.waits.WaitUntilBuilder$1.performAs(WaitUntilBuilder.java:29)
-	at net.serenitybdd.screenplay.Actor.performTask(Actor.java:299)
-	at net.serenitybdd.screenplay.Actor.perform(Actor.java:274)
-	at net.serenitybdd.screenplay.Actor.performSilently(Actor.java:254)
-	at net.serenitybdd.screenplay.Actor.attemptsTo(Actor.java:211)
-	at net.serenitybdd.screenplay.Actor.attemptsTo(Actor.java:222)
-	at com.exito.tasks.AgregarProductosAleatorios.performAs(AgregarProductosAleatorios.java:42)
-	at com.exito.tasks.AgregarProductosAleatorios$ByteBuddy$z8uMc52S.performAs$accessor$6cRNtmAx(Unknown Source)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-	at net.thucydides.core.steps.StepInterceptor.invokeMethod(StepInterceptor.java:519)
-	at net.thucydides.core.steps.StepInterceptor.executeTestStepMethod(StepInterceptor.java:499)
-	at net.thucydides.core.steps.StepInterceptor.runTestStep(StepInterceptor.java:471)
-	at net.thucydides.core.steps.StepInterceptor.runOrSkipMethod(StepInterceptor.java:213)
-	at net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:200)
-	at net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:92)
-	at net.thucydides.core.steps.ProxyConfiguration$InterceptorDispatcher.intercept(ProxyConfiguration.java:51)
-	at com.exito.tasks.AgregarProductosAleatorios$ByteBuddy$z8uMc52S.performAs(Unknown Source)
-	at net.serenitybdd.screenplay.Actor.performTask(Actor.java:299)
-	at net.serenitybdd.screenplay.Actor.perform(Actor.java:274)
-	at net.serenitybdd.screenplay.Actor.attemptsTo(Actor.java:215)
-	at net.serenitybdd.screenplay.Actor.attemptsTo(Actor.java:222)
-	at com.exito.stepDefinitions.AgregarProductosCarritoStepDefinition.elUsuarioSeleccionaLosProductos(AgregarProductosCarritoStepDefinition.java:29)
-	at ✽.el usuario selecciona los productos(file:///D:/Cursos/Proyectos%20Java/ProyectoWebScreenplay/src/test/resources/features/agregarProductosCarrito.feature:8)
+<pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;button class=&quot;QuantitySelectorDefault_plus__7TM3c&quot;&gt;...&lt;/button&gt; is not clickable at point (1322, 12). Other element would receive the click: &lt;div id=&quot;wps_popup&quot; data-wps-popup=&quot;&quot; data-wps-namespace-id=&quot;ems-wc-ns-u6rmk9B-os&quot;&gt;...&lt;/div&gt;
+  (Session info: MicrosoftEdge=122.0.2365.80)
+Build info: version: '4.10.0', revision: 'c14d967899'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.22'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [e75e91d9a656f3f954583cd6a4a36d6d, clickElement {id=f.49AE58C7B69FD7D27135FAD8FCA47E09.d.ED5A3C03D34D947ECB4276D3D26B579D.e.641}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 122.0.2365.80, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:63784}, msedge: {msedgedriverVersion: 122.0.2365.80 (bfff41c27eb2..., userDataDir: C:\Users\Jose\AppData\Local...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63784/devtoo..., se:cdpVersion: 122.0.2365.80, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[EdgeDriver: MicrosoftEdge on windows (e75e91d9a656f3f954583cd6a4a36d6d)] -&gt; xpath: (//section[1]/div/div/button[2])[3]]
+Session ID: e75e91d9a656f3f954583cd6a4a36d6d
+	at java.base@11.0.22/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base@11.0.22/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base@11.0.22/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base@11.0.22/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at app//org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:199)
+	at app//org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:132)
+	at app//org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:51)
+	at app//org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at app//org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+	at app//org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+	at app//org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:531)
+	at app//org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:242)
+	at app//org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
+	at app//net.serenitybdd.core.pages.WebElementFacadeImpl.lambda$click$6(WebElementFacadeImpl.java:1213)
+	at app//net.serenitybdd.core.pages.WithRetries.perform(WithRetries.java:22)
+	at app//net.serenitybdd.core.pages.WithRetries.perform(WithRetries.java:27)
+	at app//net.serenitybdd.core.pages.WithRetries.perform(WithRetries.java:27)
+	at app//net.serenitybdd.core.pages.WithRetries.perform(WithRetries.java:27)
+	at app//net.serenitybdd.core.pages.WithRetries.perform(WithRetries.java:27)
+	at app//net.serenitybdd.core.pages.WithRetries.perform(WithRetries.java:27)
+	at app//net.serenitybdd.core.pages.WithRetries.perform(WithRetries.java:27)
+	at app//net.serenitybdd.core.pages.WithRetries.perform(WithRetries.java:27)
+	at app//net.serenitybdd.core.pages.WithRetries.perform(WithRetries.java:27)
+	at app//net.serenitybdd.core.pages.WithRetries.perform(WithRetries.java:27)
+	at app//net.serenitybdd.core.pages.WithRetries.perform(WithRetries.java:27)
+	at app//net.serenitybdd.core.pages.WithRetries.perform(WithRetries.java:27)
+	at app//net.serenitybdd.core.pages.WebElementFacadeImpl.click(WebElementFacadeImpl.java:1213)
+	at app//net.serenitybdd.screenplay.actions.ClickOnTarget.performAs(ClickOnTarget.java:14)
+	at app//net.serenitybdd.screenplay.actions.ClickOnTarget$ByteBuddy$7FtmtaG6.performAs$accessor$ebvEhJHM(Unknown Source)
+	at jdk.internal.reflect.GeneratedMethodAccessor17.invoke(Unknown Source)
+	at java.base@11.0.22/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base@11.0.22/java.lang.reflect.Method.invoke(Method.java:566)
+	at app//net.thucydides.core.steps.StepInterceptor.invokeMethod(StepInterceptor.java:522)
+	at app//net.thucydides.core.steps.StepInterceptor.executeTestStepMethod(StepInterceptor.java:502)
+	at app//net.thucydides.core.steps.StepInterceptor.runTestStep(StepInterceptor.java:474)
+	at app//net.thucydides.core.steps.StepInterceptor.runOrSkipMethod(StepInterceptor.java:213)
+	at app//net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:200)
+	at app//net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:88)
+	at app//net.thucydides.core.steps.ProxyConfiguration$InterceptorDispatcher.intercept(ProxyConfiguration.java:51)
+	at app//net.serenitybdd.screenplay.actions.ClickOnTarget$ByteBuddy$7FtmtaG6.performAs(Unknown Source)
+	at app//net.serenitybdd.screenplay.Actor.performTask(Actor.java:299)
+	at app//net.serenitybdd.screenplay.Actor.perform(Actor.java:274)
+	at app//net.serenitybdd.screenplay.Actor.attemptsTo(Actor.java:215)
+	at app//net.serenitybdd.screenplay.Actor.attemptsTo(Actor.java:222)
+	at app//com.exito.interactions.AgregarCantidadRandom.performAs(AgregarCantidadRandom.java:30)
+	at app//com.exito.interactions.AgregarCantidadRandom$ByteBuddy$SaNOaP3u.performAs$accessor$M8aQ2ZHJ(Unknown Source)
+	at java.base@11.0.22/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base@11.0.22/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base@11.0.22/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base@11.0.22/java.lang.reflect.Method.invoke(Method.java:566)
+	at app//net.thucydides.core.steps.StepInterceptor.invokeMethod(StepInterceptor.java:522)
+	at app//net.thucydides.core.steps.StepInterceptor.executeTestStepMethod(StepInterceptor.java:502)
+	at app//net.thucydides.core.steps.StepInterceptor.runTestStep(StepInterceptor.java:474)
+	at app//net.thucydides.core.steps.StepInterceptor.runOrSkipMethod(StepInterceptor.java:213)
+	at app//net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:200)
+	at app//net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:88)
+	at app//net.thucydides.core.steps.ProxyConfiguration$InterceptorDispatcher.intercept(ProxyConfiguration.java:51)
+	at app//com.exito.interactions.AgregarCantidadRandom$ByteBuddy$SaNOaP3u.performAs(Unknown Source)
+	at app//net.serenitybdd.screenplay.Actor.performTask(Actor.java:299)
+	at app//net.serenitybdd.screenplay.Actor.perform(Actor.java:274)
+	at app//net.serenitybdd.screenplay.Actor.attemptsTo(Actor.java:215)
+	at app//net.serenitybdd.screenplay.Actor.attemptsTo(Actor.java:222)
+	at app//com.exito.tasks.AgregarProductosAleatorios.performAs(AgregarProductosAleatorios.java:57)
+	at app//com.exito.tasks.AgregarProductosAleatorios$ByteBuddy$tVlDcuTZ.performAs$accessor$f02sUgtY(Unknown Source)
+	at java.base@11.0.22/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base@11.0.22/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base@11.0.22/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base@11.0.22/java.lang.reflect.Method.invoke(Method.java:566)
+	at app//net.thucydides.core.steps.StepInterceptor.invokeMethod(StepInterceptor.java:522)
+	at app//net.thucydides.core.steps.StepInterceptor.executeTestStepMethod(StepInterceptor.java:502)
+	at app//net.thucydides.core.steps.StepInterceptor.runTestStep(StepInterceptor.java:474)
+	at app//net.thucydides.core.steps.StepInterceptor.runOrSkipMethod(StepInterceptor.java:213)
+	at app//net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:200)
+	at app//net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:88)
+	at app//net.thucydides.core.steps.ProxyConfiguration$InterceptorDispatcher.intercept(ProxyConfiguration.java:51)
+	at app//com.exito.tasks.AgregarProductosAleatorios$ByteBuddy$tVlDcuTZ.performAs(Unknown Source)
+	at app//net.serenitybdd.screenplay.Actor.performTask(Actor.java:299)
+	at app//net.serenitybdd.screenplay.Actor.perform(Actor.java:274)
+	at app//net.serenitybdd.screenplay.Actor.attemptsTo(Actor.java:215)
+	at app//net.serenitybdd.screenplay.Actor.attemptsTo(Actor.java:222)
+	at app//com.exito.stepDefinitions.AgregarProductosCarritoStepDefinition.elUsuarioSeleccionaLosProductos(AgregarProductosCarritoStepDefinition.java:29)
+	at ✽.el usuario selecciona los productos(file:///D:/Proyectos/ProyectoWebScreenplay/src/test/resources/features/agregarProductosCarrito.feature:8)
 </pre>
 </span>
 </div>
@@ -130,7 +186,7 @@ Expected: an element that is visible
 </thead>
 <tr>
 <td class="failures">Agregar 5 productos aleatorios y agregarlos al carrito de compras</td>
-<td class="failures">1m30.50s</td>
+<td class="failures">1m23.27s</td>
 <td class="failures">failed</td>
 </tr>
 </table>
@@ -143,41 +199,97 @@ Expected: an element that is visible
 Escenario: Agregar 5 productos aleatorios y agregarlos al carrito de compras                     ?[90m# src/test/resources/features/agregarProductosCarrito.feature:6?[0m
   ?[32mDado ?[0m?[32mque el usuario se encuentre en la pagina principal de exito?[0m                               ?[90m# com.exito.stepDefinitions.AgregarProductosCarritoStepDefinition.queElUsuarioSeEncuentreEnLaPaginaPrincipalDeExito()?[0m
   ?[31mCuando ?[0m?[31mel usuario selecciona los productos?[0m                                                     ?[90m# com.exito.stepDefinitions.AgregarProductosCarritoStepDefinition.elUsuarioSeleccionaLosProductos()?[0m
-      ?[31mjava.lang.AssertionError: 
-Expected: an element that is visible
-     but: no matching element found by [[ChromeDriver: chrome on windows (3bfba0721135c908740aac17e1c9a551)] -&gt; xpath: (//span[.='Agregar'])[1]]
-	at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:20)
-	at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:6)
-	at net.serenitybdd.screenplay.QuestionConsequence.evaluateFor(QuestionConsequence.java:49)
-	at net.serenitybdd.screenplay.EventualConsequence.evaluateFor(EventualConsequence.java:59)
-	at net.serenitybdd.screenplay.Actor.check(Actor.java:420)
-	at net.serenitybdd.screenplay.Actor.should(Actor.java:392)
-	at net.serenitybdd.screenplay.waits.WaitUntilBuilder$1.performAs(WaitUntilBuilder.java:29)
+      ?[31morg.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;button class=&quot;QuantitySelectorDefault_plus__7TM3c&quot;&gt;...&lt;/button&gt; is not clickable at point (1322, 12). Other element would receive the click: &lt;div id=&quot;wps_popup&quot; data-wps-popup=&quot;&quot; data-wps-namespace-id=&quot;ems-wc-ns-u6rmk9B-os&quot;&gt;...&lt;/div&gt;
+  (Session info: MicrosoftEdge=122.0.2365.80)
+Build info: version: '4.10.0', revision: 'c14d967899'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.22'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [e75e91d9a656f3f954583cd6a4a36d6d, clickElement {id=f.49AE58C7B69FD7D27135FAD8FCA47E09.d.ED5A3C03D34D947ECB4276D3D26B579D.e.641}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 122.0.2365.80, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:63784}, msedge: {msedgedriverVersion: 122.0.2365.80 (bfff41c27eb2..., userDataDir: C:\Users\Jose\AppData\Local...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63784/devtoo..., se:cdpVersion: 122.0.2365.80, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[EdgeDriver: MicrosoftEdge on windows (e75e91d9a656f3f954583cd6a4a36d6d)] -&gt; xpath: (//section[1]/div/div/button[2])[3]]
+Session ID: e75e91d9a656f3f954583cd6a4a36d6d
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:199)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:132)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:51)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:531)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:242)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
+	at net.serenitybdd.core.pages.WebElementFacadeImpl.lambda$click$6(WebElementFacadeImpl.java:1213)
+	at net.serenitybdd.core.pages.WithRetries.perform(WithRetries.java:22)
+	at net.serenitybdd.core.pages.WithRetries.perform(WithRetries.java:27)
+	at net.serenitybdd.core.pages.WithRetries.perform(WithRetries.java:27)
+	at net.serenitybdd.core.pages.WithRetries.perform(WithRetries.java:27)
+	at net.serenitybdd.core.pages.WithRetries.perform(WithRetries.java:27)
+	at net.serenitybdd.core.pages.WithRetries.perform(WithRetries.java:27)
+	at net.serenitybdd.core.pages.WithRetries.perform(WithRetries.java:27)
+	at net.serenitybdd.core.pages.WithRetries.perform(WithRetries.java:27)
+	at net.serenitybdd.core.pages.WithRetries.perform(WithRetries.java:27)
+	at net.serenitybdd.core.pages.WithRetries.perform(WithRetries.java:27)
+	at net.serenitybdd.core.pages.WithRetries.perform(WithRetries.java:27)
+	at net.serenitybdd.core.pages.WithRetries.perform(WithRetries.java:27)
+	at net.serenitybdd.core.pages.WebElementFacadeImpl.click(WebElementFacadeImpl.java:1213)
+	at net.serenitybdd.screenplay.actions.ClickOnTarget.performAs(ClickOnTarget.java:14)
+	at net.serenitybdd.screenplay.actions.ClickOnTarget$ByteBuddy$7FtmtaG6.performAs$accessor$ebvEhJHM(Unknown Source)
+	at jdk.internal.reflect.GeneratedMethodAccessor17.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at net.thucydides.core.steps.StepInterceptor.invokeMethod(StepInterceptor.java:522)
+	at net.thucydides.core.steps.StepInterceptor.executeTestStepMethod(StepInterceptor.java:502)
+	at net.thucydides.core.steps.StepInterceptor.runTestStep(StepInterceptor.java:474)
+	at net.thucydides.core.steps.StepInterceptor.runOrSkipMethod(StepInterceptor.java:213)
+	at net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:200)
+	at net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:88)
+	at net.thucydides.core.steps.ProxyConfiguration$InterceptorDispatcher.intercept(ProxyConfiguration.java:51)
+	at net.serenitybdd.screenplay.actions.ClickOnTarget$ByteBuddy$7FtmtaG6.performAs(Unknown Source)
 	at net.serenitybdd.screenplay.Actor.performTask(Actor.java:299)
 	at net.serenitybdd.screenplay.Actor.perform(Actor.java:274)
-	at net.serenitybdd.screenplay.Actor.performSilently(Actor.java:254)
-	at net.serenitybdd.screenplay.Actor.attemptsTo(Actor.java:211)
+	at net.serenitybdd.screenplay.Actor.attemptsTo(Actor.java:215)
 	at net.serenitybdd.screenplay.Actor.attemptsTo(Actor.java:222)
-	at com.exito.tasks.AgregarProductosAleatorios.performAs(AgregarProductosAleatorios.java:42)
-	at com.exito.tasks.AgregarProductosAleatorios$ByteBuddy$z8uMc52S.performAs$accessor$6cRNtmAx(Unknown Source)
+	at com.exito.interactions.AgregarCantidadRandom.performAs(AgregarCantidadRandom.java:30)
+	at com.exito.interactions.AgregarCantidadRandom$ByteBuddy$SaNOaP3u.performAs$accessor$M8aQ2ZHJ(Unknown Source)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-	at net.thucydides.core.steps.StepInterceptor.invokeMethod(StepInterceptor.java:519)
-	at net.thucydides.core.steps.StepInterceptor.executeTestStepMethod(StepInterceptor.java:499)
-	at net.thucydides.core.steps.StepInterceptor.runTestStep(StepInterceptor.java:471)
+	at net.thucydides.core.steps.StepInterceptor.invokeMethod(StepInterceptor.java:522)
+	at net.thucydides.core.steps.StepInterceptor.executeTestStepMethod(StepInterceptor.java:502)
+	at net.thucydides.core.steps.StepInterceptor.runTestStep(StepInterceptor.java:474)
 	at net.thucydides.core.steps.StepInterceptor.runOrSkipMethod(StepInterceptor.java:213)
 	at net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:200)
-	at net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:92)
+	at net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:88)
 	at net.thucydides.core.steps.ProxyConfiguration$InterceptorDispatcher.intercept(ProxyConfiguration.java:51)
-	at com.exito.tasks.AgregarProductosAleatorios$ByteBuddy$z8uMc52S.performAs(Unknown Source)
+	at com.exito.interactions.AgregarCantidadRandom$ByteBuddy$SaNOaP3u.performAs(Unknown Source)
+	at net.serenitybdd.screenplay.Actor.performTask(Actor.java:299)
+	at net.serenitybdd.screenplay.Actor.perform(Actor.java:274)
+	at net.serenitybdd.screenplay.Actor.attemptsTo(Actor.java:215)
+	at net.serenitybdd.screenplay.Actor.attemptsTo(Actor.java:222)
+	at com.exito.tasks.AgregarProductosAleatorios.performAs(AgregarProductosAleatorios.java:57)
+	at com.exito.tasks.AgregarProductosAleatorios$ByteBuddy$tVlDcuTZ.performAs$accessor$f02sUgtY(Unknown Source)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at net.thucydides.core.steps.StepInterceptor.invokeMethod(StepInterceptor.java:522)
+	at net.thucydides.core.steps.StepInterceptor.executeTestStepMethod(StepInterceptor.java:502)
+	at net.thucydides.core.steps.StepInterceptor.runTestStep(StepInterceptor.java:474)
+	at net.thucydides.core.steps.StepInterceptor.runOrSkipMethod(StepInterceptor.java:213)
+	at net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:200)
+	at net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:88)
+	at net.thucydides.core.steps.ProxyConfiguration$InterceptorDispatcher.intercept(ProxyConfiguration.java:51)
+	at com.exito.tasks.AgregarProductosAleatorios$ByteBuddy$tVlDcuTZ.performAs(Unknown Source)
 	at net.serenitybdd.screenplay.Actor.performTask(Actor.java:299)
 	at net.serenitybdd.screenplay.Actor.perform(Actor.java:274)
 	at net.serenitybdd.screenplay.Actor.attemptsTo(Actor.java:215)
 	at net.serenitybdd.screenplay.Actor.attemptsTo(Actor.java:222)
 	at com.exito.stepDefinitions.AgregarProductosCarritoStepDefinition.elUsuarioSeleccionaLosProductos(AgregarProductosCarritoStepDefinition.java:29)
-	at âœ½.el usuario selecciona los productos(file:///D:/Cursos/Proyectos%20Java/ProyectoWebScreenplay/src/test/resources/features/agregarProductosCarrito.feature:8)
+	at ✽.el usuario selecciona los productos(file:///D:/Proyectos/ProyectoWebScreenplay/src/test/resources/features/agregarProductosCarrito.feature:8)
 ?[0m
   ?[36mEntonces ?[0m?[36mse valida que los valores de los productos correspondan a los que estan en el carrito?[0m ?[90m# com.exito.stepDefinitions.AgregarProductosCarritoStepDefinition.seValidaQueLosValoresDeLosProductosCorrespondanALosQueEstanEnElCarrito()?[0m
 </pre>
@@ -186,8 +298,12 @@ Expected: an element that is visible
 <div id="tab3" class="tab">
 <h2>Standard error</h2>
 <span class="code">
-<pre>mar. 02, 2024 10:30:47 P. M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
-WARNING: Unable to find an exact match for CDP version 121, returning the closest version; found: 118; Please update to a Selenium version that supports CDP version 121
+<pre>mar. 09, 2024 9:43:02 P. M. org.openqa.selenium.remote.service.DriverService$Builder getLogOutput
+INFORMACIÓN: Driver logs no longer sent to console by default; https://www.selenium.dev/documentation/webdriver/drivers/service/#setting-log-output
+mar. 09, 2024 9:43:05 P. M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+ADVERTENCIA: Unable to find CDP implementation matching 122
+mar. 09, 2024 9:43:05 P. M. org.openqa.selenium.chromium.ChromiumDriver lambda$new$4
+ADVERTENCIA: Unable to find version of CDP to use for . You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.10.0` where the version (&quot;v86&quot;) matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
 </pre>
 </span>
 </div>
@@ -199,7 +315,7 @@ WARNING: Unable to find an exact match for CDP version 121, returning the closes
 <input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
 </label>
 </div>Generated by 
-<a href="http://www.gradle.org">Gradle 7.1</a> at 2 mar. 2024 22:32:15</p>
+<a href="http://www.gradle.org">Gradle 8.0</a> at 9 mar. 2024 21:44:24</p>
 </div>
 </div>
 </body>

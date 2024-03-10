@@ -1,6 +1,5 @@
 buildscript {
-    ext.serenityCoreVersion = '4.0.19'
-    ext.serenityReport = '3.4.2'
+    ext.serenityCoreVersion = '3.9.8'
 
     repositories {
         mavenLocal()
@@ -9,13 +8,13 @@ buildscript {
     }
 
     dependencies {
-        classpath("net.serenity-bdd:serenity-gradle-plugin:$serenityReport")
-        classpath "net.serenity-bdd:serenity-single-page-report:3.3.0"
+        classpath("net.serenity-bdd:serenity-gradle-plugin:$serenityCoreVersion")
+        classpath "net.serenity-bdd:serenity-single-page-report:$serenityCoreVersion"
     }
 }
 
 plugins {
-    id "net.serenity-bdd.serenity-gradle-plugin" version "3.3.0"
+    id "net.serenity-bdd.serenity-gradle-plugin" version "$serenityCoreVersion"
     id 'java'
     id 'eclipse'
     id 'idea'
@@ -55,7 +54,7 @@ dependencies {
     implementation "net.serenity-bdd:serenity-junit5:${serenityCoreVersion}"
     implementation "net.serenity-bdd:serenity-cucumber:${serenityCoreVersion}"
 
- //   implementation "net.serenity-bdd:serenity-rest-assured:${serenityCoreVersion}"
+    //   implementation "net.serenity-bdd:serenity-rest-assured:${serenityCoreVersion}"
     implementation "net.serenity-bdd:serenity-ensure:${ensureVersion}"
     implementation "net.serenity-bdd:serenity-screenplay:${serenityCoreVersion}"
     implementation "net.serenity-bdd:serenity-screenplay-webdriver:${serenityCoreVersion}"
